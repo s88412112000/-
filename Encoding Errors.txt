@@ -1,0 +1,5 @@
+﻿Due to the limitations of the supported zip file format, the following file(s) had to be renamed.
+
+Original File Name  ->  New File Name
+bin/Multicast合體版.apk -> bin/File1.apk
+bin/Multicast合體版-backup2.apk -> bin/File2.apk

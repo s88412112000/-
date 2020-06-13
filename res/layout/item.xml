@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+       <LinearLayout
+           android:id="@+id/linearLayout"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:layout_alignParentTop="true"
+           android:orientation="horizontal" >
+    
+           
+            <Button
+        android:id="@+id/fullPlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_weight="1"
+         android:background="#000000"
+       android:textColor="#ffffff"
+        android:text="完整播放" />
+           
+    <Button
+        android:id="@+id/quickPlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+     android:layout_weight="1"
+       android:background="#000000"
+       android:textColor="#ffffff"
+       android:layout_marginLeft="1dp"
+         android:layout_marginRight="1dp"
+        android:text="快速播放" />
+
+  
+
+   
+      <Button
+        android:id="@+id/introduction_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_weight="1"
+        android:background="#000000"
+       android:textColor="#ffffff"
+       android:text="文字介紹" />
+
+      </LinearLayout>
+      
+    <TextView
+        android:id="@+id/itemName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_below="@+id/linearLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textSize="25dp"
+        android:text="文物名稱"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+  
+
+    
+ <RelativeLayout
+           android:id="@+id/playerButtons"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           
+            android:layout_alignParentBottom="true"
+           
+            android:visibility="invisible"
+            >
+   <ImageView
+        android:id="@+id/rewind"
+         android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/pause"
+        
+        android:src="@drawable/player_rew" />
+    <ImageView
+        android:id="@+id/pause"
+         android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+   
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:src="@drawable/player_pause" />
+    
+     <ImageView
+        android:id="@+id/forward"
+         android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/pause"
+           
+        android:src="@drawable/player_fwd" />
+    
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/nowPlaying"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/playerButtons"
+        android:layout_centerHorizontal="true"
+        />
+
+    <ImageView
+        android:id="@+id/picture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+       />
+ <ScrollView
+     android:id="@+id/item_scrollView"
+      android:layout_width="300dp"
+      android:layout_height="300dp"
+       android:layout_centerHorizontal="true"
+         android:layout_centerVertical="true"
+           android:visibility="invisible"
+      >
+    <TextView
+        android:id="@+id/introduction"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+       
+       
+        android:text="文字簡介" />
+    </ScrollView>
+
+ <TextView
+     android:id="@+id/nameInEnglish"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_below="@+id/itemName"
+     android:layout_centerHorizontal="true"
+     android:text="英文"
+     android:textAppearance="?android:attr/textAppearanceSmall" />
+
+</RelativeLayout>

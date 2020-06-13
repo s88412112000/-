@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/welcome_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="歡迎使用MuGuide文物語音系統"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="fill_parent"
+        android:layout_height="300sp"
+        android:layout_below="@+id/welcome_message"
+        android:layout_centerHorizontal="true"
+         android:src="@drawable/npm"/>
+
+    <TextView
+        android:id="@+id/RoomIdOrNfc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true" 
+        android:text="請輸入欲進入之房間編號或者以NFC讀取進入" />
+
+    <EditText
+        android:id="@+id/RoomID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/RoomIdOrNfc"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:inputType="number" >
+
+        <requestFocus />
+    </EditText>
+
+</RelativeLayout>
